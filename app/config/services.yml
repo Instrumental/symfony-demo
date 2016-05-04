@@ -10,7 +10,7 @@ services:
     instrumental:
         class: "Instrumental\\Agent"
         calls:
-            - [ setApiKey, ["YOUR_API_KEY"] ]
+            - [ setApiKey, ["%instrumental_api_key%"] ]
             - [ setEnabled, [TRUE] ]
 
     # These are the Twig extensions that create new filters and functions for

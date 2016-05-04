@@ -17,7 +17,8 @@
         "SYMFONY_SECRET": {
             "description": "Extra entropy for %kernel.secret%; used for CSRF tokens, cookies and signed URLs.",
             "generator": "secret"
-        }
+        },
+        "SYMFONY_INSTRUMENTAL_API_KEY": ""
     },
     "addons": [
         "heroku-postgresql"
