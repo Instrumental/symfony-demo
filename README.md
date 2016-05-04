@@ -1,3 +1,45 @@
+Instrumental Symfony Demo Application
+========================
+
+This is a demo app showing how to use Instrumental in a Symfony app. Below you'll see some basic directions and then the original Symphony Demo README. Feel free to browse the [changes we've made](https://github.com/symfony/symfony-demo/compare/master...Instrumental:master) to see just how easy it is.
+
+Add the Instrumental Agent to `composer.json`.
+
+```json
+{
+    "require": {
+        "instrumental/instrumental_agent": "*"
+    },
+}
+```
+
+TODO: Update the above to use version "~1.0" once we release 1.0.
+
+Run the installation:
+
+```bash
+composer install
+```
+
+Add the Instrumental Agent to your `app/config/services.yml`.
+
+```yaml
+instrumental:
+    class: "Instrumental\\Agent"
+    calls:
+        - [ setApiKey, ["YOUR_API_KEY"] ]
+        - [ setEnabled, [TRUE] ]
+```
+
+You can use the `setEnabled` call to enable or disable the agent in different environments.
+
+Now add instrumentation to your app wherever you'd like more info. For instance, if your users can create blog posts, perhaps you'll instrument blog post creation like so:
+```php
+$this->container->get("instrumental")->increment("blog_post.create");
+```
+
+
+
 Symfony Demo Application
 ========================
 
