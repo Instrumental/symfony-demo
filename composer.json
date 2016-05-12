@@ -65,7 +65,7 @@
             "env-map": {
                 "database_url": "DATABASE_URL",
                 "secret": "SYMFONY_SECRET",
-                "instrumental_api_key": "SYMFONY_INSTRUMENTAL_API_KEY"
+                "instrumental_api_key": "INSTRUMENTAL_API_KEY"
             }
         }
     }
