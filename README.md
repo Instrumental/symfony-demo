@@ -8,12 +8,10 @@ Add the Instrumental Agent to `composer.json`.
 ```json
 {
     "require": {
-        "instrumental/instrumental_agent": "*"
+        "instrumental/instrumental_agent": "~1.0"
     },
 }
 ```
-
-TODO: Update the above to use version "~1.0" once we release 1.0.
 
 Run the installation:
 
