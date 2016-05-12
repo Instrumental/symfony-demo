@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9c140f9cd41b5d714cc0e6c1b945e0a4",
+    "hash": "1ccd5fefc72c0f285cd814444ec76ebe",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1022,19 +1022,20 @@
         },
         {
             "name": "instrumental/instrumental_agent",
-            "version": "v0.0.7",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Instrumental/instrumental-php.git",
-                "reference": "1e2d961fd54d8c0c38365b73a7a0ed5aa004777b"
+                "url": "https://github.com/Instrumental/instrumental_agent-php.git",
+                "reference": "e46bfaad05649452397df20038160b295450b4a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Instrumental/instrumental-php/zipball/1e2d961fd54d8c0c38365b73a7a0ed5aa004777b",
-                "reference": "1e2d961fd54d8c0c38365b73a7a0ed5aa004777b",
+                "url": "https://api.github.com/repos/Instrumental/instrumental_agent-php/zipball/e46bfaad05649452397df20038160b295450b4a9",
+                "reference": "e46bfaad05649452397df20038160b295450b4a9",
                 "shasum": ""
             },
             "require": {
+                "monolog/monolog": "~1.19",
                 "pear/net_dns2": "~1.4",
                 "php": ">=7"
             },
@@ -1051,8 +1052,8 @@
             "license": [
                 "MIT"
             ],
-            "description": "WARNING: WORK IN PROGRESS. NOT PRODUCTION READY.",
-            "time": "2016-05-03 20:37:40"
+            "description": "This agent supports Instrumental custom metric monitoring for PHP applications. It provides high-data reliability at high scale.",
+            "time": "2016-05-10 19:41:37"
         },
         {
             "name": "ircmaxell/password-compat",
